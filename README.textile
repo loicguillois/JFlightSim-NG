@@ -1,0 +1,5 @@
+h1. JFlightSim NG /  Hot air balloon simulator
+
+h2. About
+
+JFlightSim NG / Hot air balloon simulator started I have started as a student in 2006. Now the story continue with a new version developped from scratch using the Java language and the JMonkeyEngine 3.
