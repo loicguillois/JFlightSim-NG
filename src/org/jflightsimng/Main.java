@@ -6,6 +6,7 @@ import com.jme3.light.Light;
 import com.jme3.math.Vector3f;
 import com.jme3.renderer.RenderManager;
 import com.jme3.scene.Spatial;
+import com.jme3.util.SkyFactory;
 
 public class Main extends SimpleApplication {
 
@@ -21,6 +22,8 @@ public class Main extends SimpleApplication {
         DirectionalLight sun = new DirectionalLight();
         sun.setDirection(new Vector3f(-0.1f, -0.7f, -1.0f));
         rootNode.addLight(sun);
+        
+        rootNode.attachChild(SkyFactory.createSky(assetManager, "Textures/BrightSky.dds", false));
         
         rootNode.attachChild(balloon);
     }
